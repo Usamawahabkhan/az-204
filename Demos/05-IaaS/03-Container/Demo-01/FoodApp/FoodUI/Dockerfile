@@ -1,5 +1,5 @@
 ##### Stage 1 - Create the build-image 
-FROM node:12.10 as node
+FROM node:12.14 as node
 LABEL author="Alexander Pajer"
 WORKDIR /app
 COPY package.json package.json
