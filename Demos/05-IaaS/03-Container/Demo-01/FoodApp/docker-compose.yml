@@ -1,0 +1,18 @@
+version: "3.9"
+services:
+    foodapi:
+        image: arambazamba/foodservice
+        ports:
+            - 8086:80
+        networks: 
+            - foodnetwork
+    foodui:
+        image: arambazamba/foodui
+        ports:
+            - 8085:80
+            networks: 
+                - foodnetwork
+        depends_on: foodapi    
+networks:
+    foodnetwork:
+        driver: bridge

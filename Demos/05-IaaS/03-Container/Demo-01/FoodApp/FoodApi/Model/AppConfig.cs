@@ -10,7 +10,6 @@ namespace FoodApi {
     }
 
     public partial class App {
-        public Uri FrontendUrl { get; set; }
         public string AllowedHosts { get; set; }
         public string MailSender { get; set; }
     }
